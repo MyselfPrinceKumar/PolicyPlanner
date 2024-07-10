@@ -1,0 +1,95 @@
+<div class="container-fluid">
+  <div class="row mainrow">
+    <div class="col-12 col-md-3">
+      <div>
+        <img src="../assets/Images/pplogo.svg" alt="" />
+      </div>
+      <div class="para">
+        Policy Planner provides insurance coverage for individuals and
+        businesses, including health, term life, motor, and SME Insurance. Our
+        team ensures high-quality service and professional support to meet your
+        specific needs.
+      </div>
+    </div>
+    <div class="col-12 col-md-3 product">
+      <h4>Products</h4>
+      <ul>
+        <li *ngFor="let product of products">
+          <span (click)="toggleSubItems(product)">
+            <i
+              [ngClass]="{
+                'plus-icon': !product.expanded,
+                'minus-icon': product.expanded
+              }"
+              class="toggle-icon"
+            ></i>
+            {{ product.name }}
+          </span>
+          <ul *ngIf="product.expanded">
+            <li *ngFor="let subProduct of product.subProducts">
+              {{ subProduct }}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+
+    <div class="col-12 col-md-3">
+      <h4>Company</h4>
+      <ul class="list-unstyled">
+        <li>About Us</li>
+        <li>Blogs</li>
+        <li>SiteMap</li>
+        <li>Become a PoSP</li>
+      </ul>
+    </div>
+
+    <div class="col-12 col-md-3">
+      <h4>Contact Us</h4>
+      <ul class="list-unstyled">
+        <li>18001200771</li>
+        <li>7798612223</li>
+        <li>Email</li>
+        <li class="social-icons">
+          <img src="../assets/Images/insta.svg" alt="Instagram" />
+          <img src="../assets/Images/youtube.svg" alt="Twitter" />
+          <img src="../assets/Images/twit.svg" alt="Dummy Image 1" />
+          <img src="../assets/Images/facebook.svg" alt="Dummy Image 2" />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="para2">
+    <p>
+      Policyplanner is registered as a Direct Broker |
+      <b class="underlined">Registration No. 747</b
+      >, Valid till 24/06/2027, License category- Direct Broker
+      <br />
+      Policy Planner Office No. B-03, KPCT Mall, Near Vishal Mega Mart, Fatima
+      Nagar, Wanawadi, Pune 411013.
+    </p>
+    <br />
+    <p>
+      Disclaimer: Insurance is the subject matter of solicitation. Visitors are
+      hereby informed that their information submitted on the website may be
+      shared with insurers. The product information for comparison displayed on
+      this website is of the insurers with whom our company has an agreement.
+      Product information is authentic and solely based on the information
+      received from the Insurer.
+    </p>
+  </div>
+  
+
+  <div class="border"></div>
+
+  <div class="last">
+    <div>
+      <b>© 2024, policyplanner.com</b>
+    </div>
+    <div class="bold">
+      <b>Terms Of Use</b>
+      <b>Privacy Policy</b>
+    </div>
+  </div>
+</div>

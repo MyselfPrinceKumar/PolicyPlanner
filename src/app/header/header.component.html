@@ -1,0 +1,43 @@
+<div class="navbar-main">
+
+    <img src="../../assets/hamburger.svg" alt="" class="hamburger" (click)="toggleMenu()">
+    <!-- <img src="../../assets/hamburger.svg" alt=""> -->
+    <div class="policy_logo" >
+      <img src="assets/PP Logo 04 2.svg" alt="policy logo" />
+    </div>
+  
+    <div class="nav-group1">
+      <div>Individual Insurance <img src="assets/Frame.svg" alt="arrow" /></div>
+      <div>Business/SME Insurance</div>
+      <div class="claim">Claim Assistant</div>
+    </div>
+  
+    <div class="nav-group2">
+      <div>About Us</div>
+      <div class="posp">Become a PoSP</div>
+      <button>Login</button>
+    </div>
+  </div>
+  
+  <div *ngIf="menuOpen" class="Mobile_view">
+    <div class="Mobile_view_items">
+      <div class="Mobile_view_items_with_arrow">
+        <img src="../../assets/Individual.svg" alt="">
+        <p>Individual Insurance</p>
+        <img src="assets/Frame.svg" alt="arrow" />
+      </div>
+      <div class="Mobile_view_items_with_arrow">
+        <img src="../../assets/Business.svg" alt="">
+        <p>Business/SME Insurance</p>
+      </div>
+      <div class="Mobile_view_items_with_arrow">
+        <img src="../../assets/Claim.svg" alt="">
+        <p>Claim Assistant</p>
+      </div>
+      <div class="Mobile_view_items_with_arrow">
+        <img src="../../assets/Abbout_us.svg" alt="">
+        <p>About Us</p>
+      </div>
+    </div>
+  </div>
+  

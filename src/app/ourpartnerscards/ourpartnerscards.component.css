@@ -1,0 +1,166 @@
+.nav-link.active {
+    border-bottom: 5px solid #F37435;
+    border-radius: 10%;
+
+}
+
+.nav-link {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.col-mdttt11 {
+    border: 2px solid #FFAB0F;
+    /* border-image-source: linear-gradient(0deg, #F07436 0%, #FF7D01 2.42%, #FFAB0F 67.42%, #FC935E 100%);
+    border-image-slice: 1; */
+    width: 155px;
+    border-radius: 7px;
+}
+
+.col-mdttt11:hover {
+    box-shadow: #ffbe9d 0px 4px 12px;
+}
+
+.ourPartnersHeading {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.ourPartnersHeading span {
+    font-weight: 700;
+    color: #F37435;
+}
+
+.card_container {
+    padding: 1rem;
+    /* margin-bottom: 1rem; */
+    /* border: none; */
+}
+
+.tab-pane {
+    margin-top: 5vh;
+}
+
+.card-img-top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    aspect-ratio: 2;
+}
+
+
+.image_container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 4fr));
+    gap: 2rem;
+    padding: 0 10rem;
+}
+
+.nav {
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+}
+
+/* section container starts from here  */
+
+.section_container {
+    background: radial-gradient(circle, transparent 29%, #f37435 37%), linear-gradient(0deg, transparent 44%, #ffcaaf40 45%, #ffcaaf40 55%, transparent 56%), linear-gradient(90deg, transparent 44%, #ffcaaf40 45%, #ffcaaf40 55%, transparent 56%);
+    background-size: 3.5em 3.5em;
+    opacity: 1;
+    width: 95%;
+    background-color: #F37435;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 23px;
+    padding-top: 1rem;
+    color: white;
+}
+
+.DataNumber {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.nonlifimg4 {
+    /* width: 285px; */
+}
+
+.dataheading {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Containt_section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section2-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 4vh;
+}
+
+.section2-rows {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.rowInside {
+    /* background: radial-gradient(circle, transparent 29%, #f37435 37%), linear-gradient(0deg, transparent 44%, #ffcaaf40 45%, #ffcaaf40 55%, transparent 56%), linear-gradient(90deg, transparent 44%, #ffcaaf40 45%, #ffcaaf40 55%, transparent 56%);
+    background-size: 3.5em 3.5em;
+    opacity: 1;
+    width: 95%; */
+    padding-bottom: 2rem;
+}
+
+.section2-firstRow {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.section2-rowdata {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:550px) {
+    .image_container {
+        padding: 4rem;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    padding: 50px;
+    background: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count {
+    display: block;
+    font-size: 24px;
+    color: #f2f2f2;
+    padding: 60px;
+    font-weight: 600;
+    width: 120px;
+}
+
+.container {
+    display: flex;
+}

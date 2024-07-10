@@ -1,0 +1,152 @@
+.container-fluid {
+  background-color: #f374355e;
+}
+.mainrow,
+.para2 {
+  padding: calc(10% + -6vw);
+}
+.para {
+  width: 18rem;
+  margin-top: 1rem;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul > li {
+  margin-bottom: 5px;
+}
+
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+
+.toggle-icon {
+  display: inline-flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  border: 1px solid black; /* Border color */
+  border-radius: 50%; /* Make it circular */
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.plus-icon::before {
+  content: '+';
+}
+
+.minus-icon::before {
+  content: '-';
+}
+
+.col-12,
+.col-md-3 {
+  padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-unstyled li {
+  padding: 5px 0;
+}
+.col-12,
+.col-md-3 {
+  padding: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-unstyled li {
+  padding: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Add space between images */
+}
+
+.social-icons img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+}
+
+@media (max-width: 768px) {
+  .mainrow {
+    /* background-color:#F374355E; */
+    padding: calc(13% + -6vw);
+    font-size: 15px;
+  }
+  .para2 {
+    font-size: 15px;
+  }
+  .para {
+    margin-top: 1rem;
+  }
+  .product {
+    margin-top: 2rem;
+  }
+}
+
+.para2 {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.border {
+  width: 100%;
+  border-top: 1px solid #000000 !important;
+  margin: 20px 0;
+}
+
+.last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.bold {
+  display: flex;
+  gap: 20px;
+}
+
+.bold b {
+  cursor: pointer;
+}
+.underlined {
+  color: #006d8d;
+  text-decoration: underline;
+}

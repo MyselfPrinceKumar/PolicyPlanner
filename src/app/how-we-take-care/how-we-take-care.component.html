@@ -1,0 +1,32 @@
+<header class="mainHeading">How We Take Care<span> Care </span> of You</header>
+<img class="Wave" src="../../assets/top_wave.svg" alt="" />
+
+<div class="Main_continer">
+  <div class="container">
+    <div
+      *ngFor="let item of items; let i = index"
+      class="slide"
+      [ngClass]="{
+        active: currentIndex === i,
+        prev: (currentIndex - 1 + items.length) % items.length === i,
+        next: (currentIndex + 1) % items.length === i
+      }"
+      (click)="navigateTo(i)"
+    >
+      <img [src]="item.image" class="Round_icons" alt="Image {{ i + 1 }}" />
+      <div class="Textcontainer">
+        <p class="Heading_text">{{ item.heading }}</p>
+        <p>{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="dots">
+    <span
+      *ngFor="let item of items; let i = index"
+      class="dot"
+      [ngClass]="{ active: currentIndex === i }"
+      (click)="navigateTo(i)"
+    ></span>
+  </div>
+</div>
+<img class="Wave" src="../../assets/down_wave.svg" alt="" />

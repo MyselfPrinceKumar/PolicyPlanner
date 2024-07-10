@@ -1,0 +1,39 @@
+<div class="container desktop_view">
+    <div class="row">
+      <div class="questions col-6">
+        <div class="Fist" #fistDiv>
+          <ul>
+            <li
+              *ngFor="let question of Question_answer; let i = index"
+              (click)="Answer(i)"
+            >
+              {{ question.Question }}
+  
+              <img class="Arrow" src="../../assets/Arrow_faq.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="answer Second col-6" #secondDiv>
+        <h4>{{ selectedQuestion.Question }}</h4>
+  
+        <p>
+          {{ selectedQuestion.answer }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="Mobile_view">
+    <div *ngFor="let faq of Question_answer; let i = index">
+      <div (click)="toggleAnswer(i)" style="cursor: pointer">
+        <li>
+          {{ faq.Question }}
+          <img class="Arrow" src="../../assets/Arrow_faq.svg" alt="" />
+        </li>
+      </div>
+      <div class="Answer_container" *ngIf="faq.showAnswer">
+        <p>{{ faq.answer }}</p>
+      </div>
+    </div>
+  </div>
+  

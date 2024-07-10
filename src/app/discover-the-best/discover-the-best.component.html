@@ -1,0 +1,322 @@
+<div class="Top_heading_container">
+  <img src="../../assets/Rectangle.svg" alt="" class="image_to_not" />
+  <div>
+    <p>Discover the Best Type of <span>Insurance</span> for You</p>
+    <img src="../../assets/Arrow .svg" alt="" />
+  </div>
+  <img src="../../assets/Squre.svg" alt="" class="image_to_not" />
+</div>
+
+<div class="container Fist_container">
+  <div class="row">
+    <!-- one main -->
+    <div class="col-12 col-md-4">
+      <div class="Img_container">
+        <img class="Three_img" src="../../assets/umbrella.svg" alt="" />
+      </div>
+
+      <div class="card_show pb-5">
+        <p class="card_heading">Individual Insurance</p>
+        <div class="container">
+          <div class="row row_container1">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Framecar.svg" alt="" />
+                <p class="type_insurance">Car</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Frameschooty.svg" alt="" />
+                <p class="type_insurance">Bike</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Groupheart.svg" alt="" />
+                <p class="type_insurance">Health</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+          </div>
+          <div class="row row_container2">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Framelittle_umbralla.svg" alt="" />
+                <p class="type_insurance">Term</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Framemoney.svg" alt="" />
+                <p class="type_insurance">Saving</p>
+                <p class="type_insurance">Plan</p>
+              </div>
+            </div>
+
+            <div class="col-4" *ngIf="showMore1">
+              <div class="icons_container View_More">
+                <img src="../../assets/Aroplane.svg" alt="" />
+                <p class="type_insurance">Travel</p>
+                <p>Insurance</p>
+              </div>
+            </div>
+
+            <div class="col-4" (click)="toggleShowMore(1)" *ngIf="!showMore1">
+              <div class="icons_container View_More">
+                <img src="../../assets/plus_icon.svg" alt="" />
+                <p class="type_insurance">View More</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row_container9" *ngIf="showMore1">
+            <div class="col-4" (click)="toggleShowMore(1)">
+              <div class="icons_container">
+                <img src="../../assets/minuse.svg" alt="" />
+
+                <p class="type_insurance">Show less</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- two main -->
+    <div class="col-12 col-md-4">
+      <div class="Img_container">
+        <img class="Three_img" src="../../assets/setting.svg" alt="" />
+      </div>
+      <div class="card_show pb-5">
+        <p class="card_heading">Business Insurance</p>
+        <div class="container">
+          <div class="row row_container1 Business_container">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/purseimg.svg" alt="" />
+                <p class="type_insurance">General</p>
+                <p class="type_insurance">Liability</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/dollerimg.svg" alt="" />
+                <p class="type_insurance">Product</p>
+                <p class="type_insurance">Liability</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/DirectorsImg.svg" alt="" />
+                <p class="type_insurance">Directors</p>
+                <p class="type_insurance">& Officers</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+          </div>
+          <div class="row row_container2 Business_container">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/cyberimg.svg" alt="" />
+                <p class="type_insurance">Cyber</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/crimeImg.svg" alt="" />
+                <p class="type_insurance">Crime</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+
+            <div class="col-4" *ngIf="showMore2">
+              <div class="icons_container View_More">
+                <img src="../../assets/FireImg.svg" alt="" />
+
+                <p>Fire &</p>
+                <p>Burglary</p>
+                <p>Insurance</p>
+              </div>
+            </div>
+
+            <div class="col-4" (click)="toggleShowMore(2)" *ngIf="!showMore2">
+              <div class="icons_container View_More">
+                <img src="../../assets/plus_icon.svg" alt="" />
+                <p class="type_insurance">View More</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row_container9" *ngIf="showMore2">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Doctors.svg" alt="" />
+                <p>Professional</p>
+                <p>Indemnity for</p>
+                <p>Doctors</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/IndemnityofCompanies.svg" alt="" />
+
+                <p>Professional</p>
+                <p>Indemnity for</p>
+                <p>Companies</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/shopowner.svg" alt="" />
+
+                <p>Shop</p>
+                <p>Owner</p>
+                <p>Insurance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row_container9" *ngIf="showMore2">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Singletransit.svg" alt="" />
+                <p>Single</p>
+                <p>Transit</p>
+                <p>Policy</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/MarineOpen.svg" alt="" />
+                <p>Marine</p>
+                <p>Open</p>
+                <p>Policy</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/SalesTurnover.svg" alt="" />
+
+                <p>Sales</p>
+                <p>Turnover</p>
+                <p>Policy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row_container9" *ngIf="showMore2">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Three_car.svg" alt="" />
+
+                <p>Motor</p>
+                <p>Fleet</p>
+                <p>Insurance</p>
+              </div>
+            </div>
+            <div class="col-4" (click)="toggleShowMore(2)">
+              <div class="icons_container">
+                <img src="../../assets/minuse.svg" alt="" />
+
+                <p class="type_insurance">Show less</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- three main -->
+
+    <div class="col-12 col-md-4">
+      <div class="Img_container">
+        <img class="Three_img" src="../../assets/team.svg" alt="" />
+      </div>
+      <div class="card_show pb-5">
+        <p class="card_heading">Group/ Employee Insurance</p>
+        <div class="container">
+          <div class="row row_container1 Business_container">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Framecar.svg" alt="" />
+                <p class="type_insurance">Car</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Frameschooty.svg" alt="" />
+                <p class="type_insurance">Bike</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Groupheart.svg" alt="" />
+                <p class="type_insurance">Health</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+          </div>
+          <div class="row row_container2 Business_container">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Framelittle_umbralla.svg" alt="" />
+                <p class="type_insurance">Term</p>
+                <p class="type_insurance">Insurance</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Framemoney.svg" alt="" />
+                <p class="type_insurance">Saving</p>
+                <p class="type_insurance">Plan</p>
+              </div>
+            </div>
+
+            <div class="col-4" *ngIf="showMore3">
+              <div class="icons_container View_More">
+                <img src="../../assets/Group_gratuity.svg" alt="" />
+                <p>Group</p>
+                <p>Gratuity</p>
+              </div>
+            </div>
+
+            <div class="col-4" (click)="toggleShowMore(3)" *ngIf="!showMore3">
+              <div class="icons_container View_More">
+                <img src="../../assets/plus_icon.svg" alt="" />
+                <p class="type_insurance">View More</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row_container9" *ngIf="showMore3">
+            <div class="col-4">
+              <div class="icons_container">
+                <img src="../../assets/Group_credit.svg" alt="" />
+
+                <p>Group</p>
+                <p>Credit</p>
+                <p>Life</p>
+              </div>
+            </div>
+            <div class="col-4" (click)="toggleShowMore(3)">
+              <div class="icons_container">
+                <img src="../../assets/minuse.svg" alt="" />
+
+                <p class="type_insurance">Show less</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

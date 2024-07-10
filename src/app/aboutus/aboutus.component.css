@@ -1,0 +1,72 @@
+.mb-4{
+    height: max-content;
+    }
+    
+    
+    
+    .mainHeading {
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .mainHeading span {
+        font-weight: 700;
+        color: #F37435;
+    }
+    
+    .card-img-top {
+        border-radius: 50%;
+        white-space: nowrap;
+        height: 50px;
+        width: 50px;
+        float: left;
+    }
+    .Review_img{
+        position: absolute;
+        right: 3rem;
+        height: 2rem;
+        width: 4rem;
+    }
+    .Review_cards{
+        padding: 0  2vw 2vw 2vw !important;
+        margin-bottom: 2rem;
+    
+        box-shadow: #f3743578 0px 7px 29px 0px;
+    
+    }
+    .card-title {
+        font-size: 14px;
+        font-weight: 700;
+        width: max-content;
+    }
+    
+    .cards-titles {
+        white-space: nowrap;
+        padding-left: 0.8rem;
+    }
+    
+    .card-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .container {
+      
+        max-width: 100%;
+    }
+    
+    .datacontainer {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        width: fit-content;
+    }
+    
+    .card {
+        padding: 2vw;
+        border-radius: 18px;
+        border: 1px solid #F37435;
+    }
+    
+    .card-body {}
